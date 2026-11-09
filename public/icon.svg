@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="104" fill="url(#bg)" />
+
+  <!-- Subtle glow ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#10b981" stroke-width="4" stroke-opacity="0.25" stroke-dasharray="12 8" />
+
+  <!-- Medical Cross Center -->
+  <g filter="url(#glow)">
+    <!-- Vertical Cross Bar -->
+    <rect x="216" y="116" width="80" height="280" rx="24" fill="url(#crossGrad)" />
+    <!-- Horizontal Cross Bar -->
+    <rect x="116" y="216" width="280" height="80" rx="24" fill="url(#crossGrad)" />
+  </g>
+
+  <!-- Centered Floating Pill Symbol -->
+  <g transform="translate(256, 256) rotate(-45)">
+    <!-- Pill Left Half -->
+    <path d="M -50 -26 L 0 -26 A 26 26 0 0 0 0 26 L -50 26 A 26 26 0 0 1 -50 -26 Z" fill="#ffffff" />
+    <!-- Pill Right Half -->
+    <path d="M 0 -26 L 50 -26 A 26 26 0 0 1 50 26 L 0 26 A 26 26 0 0 0 0 -26 Z" fill="url(#pillGrad)" />
+    <!-- Dividing line -->
+    <line x1="0" y1="-26" x2="0" y2="26" stroke="#0f172a" stroke-width="3" stroke-opacity="0.3" />
+  </g>
+
+  <!-- Small Sparkle Dots -->
+  <circle cx="370" cy="140" r="10" fill="#38bdf8" opacity="0.8" />
+  <circle cx="140" cy="370" r="8" fill="#34d399" opacity="0.8" />
+</svg>

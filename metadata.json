@@ -1,0 +1,6 @@
+{
+  "name": "PharmaCore Enterprise - Pharmacy Management System",
+  "description": "نظام إدارة الصيدليات المتكامل عالي الأداء مع نقطة بيع سريعة، قارئ باركود، إدارة شحنات FEFO، فحص التداخلات الدوائية، وتقفيل الشيفتات مع المعمارية النظيفة Clean Architecture و .NET 9 و Angular 19",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
